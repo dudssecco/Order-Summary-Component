@@ -1,0 +1,146 @@
+@charset "UTF-8";
+
+@font-face{
+    font-family: RedMedium;
+    src: url(../fonts/RedHatDisplay-Medium.ttf), format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face{
+    font-family: RedBold;
+    src: url(../fonts/RedHatDisplay-Bold.ttf), format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face{
+    font-family: RedBlack;
+    src: url(../fonts/RedHatDisplay-Black.ttf), format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+:root{
+    --PaleBlue: hsl(225, 100%, 94%);
+    --BrightBlue: hsl(245, 75%, 52%);
+    --VeryPaleBlue: hsl(225, 100%, 98%);
+    --DesaturatedBlue: hsl(224, 23%, 55%);
+    --DarkBlue: hsl(223, 47%, 23%);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    height: 100%;
+}
+
+body{
+    background-color: var(--PaleBlue);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container{
+    max-width: 450px;
+    background-color: White;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 25px;
+    border-radius: 20px;
+}
+
+.img{
+    width:100%;
+}
+
+.principal{
+    width: 100%;
+    border-radius: 20px 20px 0 0;
+}
+
+.text{
+    padding: 30px;
+    width: 100%;
+}
+
+h1{
+    font-family: RedBlack;
+    text-align: center;
+    color: var(--DarkBlue);
+    padding-bottom: 20px
+}
+
+p{
+    font-family: RedMedium;
+    text-align: center;
+    color: var(--DesaturatedBlue);
+    padding-bottom: 25px
+}
+
+.info{
+    background-color: var(--VeryPaleBlue);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    border-radius: 10px;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+.value{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#plano{
+    font-family: RedBlack;
+}
+
+#valor{
+    font-family: RedMedium;
+    color: var(--DesaturatedBlue);
+}
+
+#change{
+    font-family: RedBold;
+    color: var(--BrightBlue);
+    text-decoration: underline;
+
+}
+
+.pay{
+    width: 100%;
+    height: 50px;
+    background-color: var(--BrightBlue);
+    color: white;
+    font-family: RedBlack;
+    font-size: 1rem;
+    border: none;
+    border-radius: 10px;
+    box-shadow: hsla(235, 75%, 52%, 0.566) 0px 7px 29px 0px;
+    margin-bottom: 10px;
+}
+
+.cancel{
+    width: 100%;
+    height: 50px;
+    background-color: transparent;
+    border: none;
+    font-family: RedBlack;
+    color: var(--DesaturatedBlue);
+    font-size: 1rem;
+}
+
