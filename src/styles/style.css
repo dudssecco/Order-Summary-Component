@@ -118,7 +118,7 @@ p{
     font-family: RedBold;
     color: var(--BrightBlue);
     text-decoration: underline;
-
+    cursor: pointer;
 }
 
 .pay{
@@ -132,6 +132,7 @@ p{
     border-radius: 10px;
     box-shadow: hsla(235, 75%, 52%, 0.566) 0px 7px 29px 0px;
     margin-bottom: 10px;
+    cursor: pointer;
 }
 
 .cancel{
@@ -142,5 +143,6 @@ p{
     font-family: RedBlack;
     color: var(--DesaturatedBlue);
     font-size: 1rem;
+    cursor: pointer;
 }
 
